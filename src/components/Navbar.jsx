@@ -1,9 +1,26 @@
-import React, { useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false)
+    const menuRef = useRef(null)
+
+    useEffect(() => {
+        const handler = (event) => {
+            if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handler);
+        document.addEventListener('touchstart', handler);
+
+        return () => {
+            document.removeEventListener('mousedown', handler);
+            document.removeEventListener('touchstart', handler);
+        };
+    }, [isOpen]); 
 
   return (
     <motion.nav
@@ -49,7 +66,7 @@ const Navbar = () => {
                 </svg>
             </a>
             {/* CV Button + Icon */}
-            <a href="" target="_blank" rel="noopener noreferrer"
+            <a href="/public/RACV.pdf" target="_blank" rel="noopener noreferrer"
             className="cv-container">
 
                 <span>View CV</span>
@@ -71,6 +88,7 @@ const Navbar = () => {
 
             {/* Drawer */}
             <div
+                ref={menuRef}
                 className={`fixed top-0 right-0 h-full w-64 bg-[#0C0E12]/90 shadow-xl z-50
                     transform transition-transform duration-300
                     ${isOpen ? "translate-x-0" : "translate-x-full"}
@@ -114,7 +132,7 @@ const Navbar = () => {
                 </nav>
 
                 {/* CV Button + Icon */}
-                <a href="" target="_blank" rel="noopener noreferrer"
+                <a href="/public/RACV.pdf" target="_blank" rel="noopener noreferrer"
                     className="cv-container-sm">
 
                     <span>View CV</span>

@@ -6,7 +6,7 @@ const Hero = () => {
     <div id='home' 
     className="min-h-screen flex flex-col items-center justify-center p-4
     bg-[url('/images/background.jpg')] 
-    bg-cover">
+    bg-cover pt-20">
 
       {/* Profile Image */}
       <motion.div 
