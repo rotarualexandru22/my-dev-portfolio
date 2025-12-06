@@ -52,7 +52,7 @@ const Hero = () => {
           transition={{ delay: 0.55, duration: 0.7 }}
 
           className="text-center text-3xl mb-2">
-            Hi, I am <span className="gradient-text">Alex</span>!
+            Hi, I am Alex!
           </motion.h1>
 
           <motion.p 
