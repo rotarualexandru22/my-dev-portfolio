@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div id='home' 
     className="min-h-screen flex flex-col items-center justify-center p-4
-    bg-[url('/src/assets/images/background.jpg')] 
+    bg-[url('/images/background.jpg')] 
     bg-cover">
 
       {/* Profile Image */}
@@ -26,7 +26,7 @@ const Hero = () => {
         from-orange-400 to-red-500 blur-xl opacity-25"></motion.div>
 
         <img 
-          src="/src/assets/images/profile.png" 
+          src="/images/profile.png" 
           className="w-72 h-72
           lg:w-96 lg:h-96 rounded-full relative z-10 object-cover" 
           alt="Profile picture" 

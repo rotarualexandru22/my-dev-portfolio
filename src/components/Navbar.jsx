@@ -22,7 +22,7 @@ const Navbar = () => {
 
         {/* Logo + Name */}
         <a href='#home' className='flex items-center justify-center space-x-1'>
-            <img src="/src/assets/logo/arlogowhite.svg" className='size-8 md:size-10 ' alt="" />
+            <img src="/logo/arlogowhite.svg" className='size-8 md:size-10 ' alt="" />
             <span className='gradient-text md:text-lg lg:text-xl font-semibold'>Alexandru Rotaru</span>
         </a>
 
