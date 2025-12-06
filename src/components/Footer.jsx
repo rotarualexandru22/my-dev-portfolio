@@ -35,7 +35,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/rotaru-alexandru-34779b214/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
             LinkedIn
           </a>
-          <a href="/public/RACV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+          <a href="/RACV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
             CV
           </a>
         </div>

@@ -66,7 +66,7 @@ const Navbar = () => {
                 </svg>
             </a>
             {/* CV Button + Icon */}
-            <a href="/public/RACV.pdf" target="_blank" rel="noopener noreferrer"
+            <a href="/RACV.pdf" target="_blank" rel="noopener noreferrer"
             className="cv-container">
 
                 <span>View CV</span>
@@ -132,7 +132,7 @@ const Navbar = () => {
                 </nav>
 
                 {/* CV Button + Icon */}
-                <a href="/public/RACV.pdf" target="_blank" rel="noopener noreferrer"
+                <a href="/RACV.pdf" target="_blank" rel="noopener noreferrer"
                     className="cv-container-sm">
 
                     <span>View CV</span>
