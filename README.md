@@ -1,16 +1,59 @@
-# React + Vite
+# 🚀 My Personal Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Overview
+This repository hosts my personal developer portfolio, designed to provide a comprehensive view of my skills, experience, and projects. It serves as my primary online resume and a central hub for all my professional links.
 
-Currently, two official plugins are available:
+### Key Features
+* **Project Showcase:** Detailed information and live links to my major projects.
+* **Skill Overview:** A clear summary of my technical stack and expertise.
+* **Professional Links:** Direct links to my GitHub profile and LinkedIn page.
+* **Contact Information:** Easy way for recruiters or collaborators to get in touch.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🛠 Technology Stack
+This project is built using modern and efficient frontend technologies:
+* **Frontend Framework:** [React.js](https://reactjs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Utility-First CSS Framework)
+* **Deployment:** Vercel
 
-## React Compiler
+### 🏃 How to Run Locally (For Developers)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To get a copy of this project up and running on your local machine for development and testing, follow these steps.
 
-## Expanding the ESLint configuration
+**Prerequisites:**
+* Node.js (LTS recommended)
+* npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Installation Steps:**
+1.  **Clone the repository:**
+    ```bash
+    git clone [Your Repository URL Here]
+    cd my-portfolio-repo
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install 
+    # OR
+    yarn install
+    ```
+3.  **Run the development server:**
+    ```bash
+    npm start 
+    # OR
+    yarn start
+    ```
+    The application will typically open in your browser at `http://localhost:3000`.
+
+---
+
+### Next Step in Git:
+
+After creating and saving your `README.md` file, you need to commit and push this change to GitHub:
+
+1.  **In your terminal:**
+    ```bash
+    git add README.md
+    git commit -m "Added comprehensive README file"
+    git push origin main
+    ```
+
+Now your GitHub repository is professional, well-documented, and ready for deployment to Vercel!
