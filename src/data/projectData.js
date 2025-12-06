@@ -1,0 +1,39 @@
+
+const projectData = [
+    {
+        id: 1,
+        title: "AI Agency",
+        description: "A project simulating an AI-powered digital agency platform where users can see AI-generated content and project workflows. Built to practice React and modern UI design.",
+        image: "/src/assets/images/aiagency.png",
+        live: "#",
+    },
+    {
+        id: 2,
+        title: "MERN Notes",
+        description: "A full-stack MERN application for creating, editing, and managing notes. Focused on learning MongoDB, Express, React, and Node.js integration, plus basic authentication.",
+        image: "/src/assets/images/mern.png",
+        live: "#",
+    },
+    {
+        id: 3,
+        title: "AR Website",
+        description: "A sales website built with React and TailwindCSS, demonstrating responsive layouts, interactive UI components, and clean modern styling.",
+        image: "/src/assets/images/arwebsite.png",
+        live: "#",
+    },
+    {
+        id: 4,
+        title: "ChatUI",
+        description: "A frontend-only chat interface built in React. Focused on component reusability, responsive design, and simulating real-time messaging UX without backend integration.",
+        image: "/src/assets/images/chatui.png",
+        live: "#",
+    },
+    {
+        id: 5,
+        title: "Future project",
+        description: "To be continued...",
+        live: "#",
+    },
+];
+
+export default projectData;

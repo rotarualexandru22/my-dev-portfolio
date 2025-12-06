@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #0B0F17, #111827, #0B0F17);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #111827; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #3b82f6, #6366f1);
+      border-radius: 9999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0ea5e9; 
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background: #a855f7; 
+    }
+
+    /* Firefox */
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #6366f1 #111827;
+    }
+}
+
+@layer utilities {
+    .font-inter {
+        font-family: Inter;
+    }
+
+    /* Navbar */
+    .svg-styling {
+        @apply size-6 cursor-pointer hover:scale-95 
+        duration-400 ease-in-out 
+        text-gray-200 hover:text-gray-300
+    }
+
+    .li-styling {
+        @apply md:text-lg lg:text-xl font-semibold 
+        text-white hover:text-blue-500
+        duration-400 ease-in-out hover:scale-105;
+    }
+    
+    .li-styling-sm {
+        @apply font-semibold 
+        text-white hover:text-blue-500
+        duration-400 ease-in-out hover:scale-105
+    }
+    
+    .cv-container {
+        @apply flex items-center md:space-x-1 
+        bg-blue-500 rounded-xl px-2 py-[3px] font-semibold
+        hover:bg-blue-600 duration-300 ease-in-out 
+        active:bg-blue-700
+    }
+    
+    .cv-container-sm {
+        @apply flex items-center mt-4 px-4 py-2
+        justify-self-center font-semibold rounded-xl 
+        bg-blue-500 
+        hover:bg-blue-600 duration-300 ease-in-out 
+        active:bg-blue-700 w-fit 
+    }
+    
+    .cv-container-sm svg {
+        @apply transition-transform duration-200;
+    }
+    .cv-container-sm:hover svg {
+        @apply translate-x-[1px];
+    }
+    
+    .cv-container svg {
+        @apply transition-transform duration-200;
+    }
+    .cv-container:hover svg {
+        @apply translate-x-[1px];
+    }
+    /* Navbar */
+
+    /* Hero */
+    .gradient-text {
+        background: linear-gradient(90deg, #0ea5e9, #6366f1, #a855f7);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    @media (min-width: 1024px) {
+    .anim-flow {
+            animation: wavyPath 30s ease infinite;
+            background-size: 400% 400%;
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes leftRightPath {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    @keyframes topBottomPath {
+        0% {background-position: 50% 0%;}
+        50% {background-position: 50% 100%;}
+        100% {background-position: 50% 0%;}
+    }
+
+    @keyframes diagonalPath {
+        0% {background-position: 0% 0%;}
+        50% {background-position: 100% 100%;}
+        100% {background-position: 0% 0%;}
+    }
+
+    @keyframes wavyPath {
+        0%  { background-position: 0% 50%; } 
+        25% { background-position: 75% 25%; } /* Moves right and up */
+        50% { background-position: 100% 50%; } /* Moves further right, back to center height */
+        75% { background-position: 25% 75%; } /* Moves left and down */
+        100% { background-position: 0% 50%; } /* Back to start */
+    }
+}
+
+
