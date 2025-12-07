@@ -13,8 +13,7 @@ const projectData = [
         title: "MERN Notes",
         description: "A full-stack MERN application for creating, editing, and managing notes. Focused on learning MongoDB, Express, React, and Node.js integration, plus basic authentication.",
         image: "/images/mern.png",
-        live: "#",
-        github: "#",
+        github: "https://github.com/rotarualexandru22/MERNnotes/tree/main",
     },
     {
         id: 3,
