@@ -14,7 +14,7 @@ const ProjectCard = ({ title, description, image, live, github }) => {
         <div 
           className="w-full h-full flex items-center justify-center 
                      bg-black text-white text-2xl font-semibold 
-                     p-4 min-h-[360px] rounded-xl" 
+                     p-4 min-h-[438px] rounded-xl" 
         >
           {description}
         </div>
@@ -22,12 +22,13 @@ const ProjectCard = ({ title, description, image, live, github }) => {
         <>
           <img src={image} alt={title} className="w-full h-60 object-cover" />
 
-          <div className="p-4 flex flex-col flex-1 justify-between
+          <div className="p-4 flex flex-col justify-between
                           border border-t-0 border-white/20 rounded-b-xl 
-                          backdrop-blur-sm bg-black/20">
+                        bg-black/20">
             <div>
               <h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
-              <p className="text-gray-300 text-sm text-justify">{description}</p>
+              <p className="text-gray-300 text-sm text-justify
+              h-20 overflow-y-auto">{description}</p>
             </div>
 
             {/* Github + Live container */}
