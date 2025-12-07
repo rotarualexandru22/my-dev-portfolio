@@ -26,8 +26,8 @@ To get a copy of this project up and running on your local machine for developme
 **Installation Steps:**
 1.  **Clone the repository:**
     ```bash
-    git clone [Your Repository URL Here]
-    cd my-portfolio-repo
+    git clone https://github.com/rotarualexandru22/my-dev-portfolio
+    cd my-dev-portfolio
     ```
 2.  **Install dependencies:**
     ```bash
