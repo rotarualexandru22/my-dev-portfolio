@@ -27,7 +27,7 @@ const SkillAccordion = ({ title, children, id, isOpen, onToggle }) => {
   return (
     <motion.div
       onClick={() => onToggle(id)} 
-
+      
       layout
       className="border border-white/20 rounded-xl 
       bg-black/20 backdrop-blur-sm p-4 mb-4
